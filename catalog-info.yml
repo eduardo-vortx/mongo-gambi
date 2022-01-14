@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Liquidacao.api
+  description: Esse projeto centraliza o back-end das aplicação da cabine de liquidaçaõ Vórtx
+  tags:
+    - Node
+    - Herbs
+    - GraphQL
+  links:
+    - url: https://docs.vortx.com.br/docs/squads/gringotes/produtos/liquidacao
+      title: Doc do produto
+      icon: dashboard
+    - url: https://admin.example-org.com
+      title: Colocar o Swagger se o projeto tiver
+      icon: elefante
+  annotations:
+    github.com/project-slug: vortx-dtvm/Liquidacao.api
+spec:
+  type: Back-End
+  lifecycle: production
+  owner: gringotes
+  system: one-backoffice
+  consumesApis:
+    - IntegraCaixaOnline.Api
